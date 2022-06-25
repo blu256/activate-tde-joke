@@ -202,6 +202,7 @@ case $ACTION in
 	"off")
 		restore_bg_settings
 		apply_new_settings
+		unregister_karamba
 		cleanup
 
 		echo -e "\nThank you!"
