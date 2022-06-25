@@ -164,7 +164,6 @@ restore_bg_settings() {
 black_out_bg() {
 	for d in $(seq 0 $max_desktop)
 	do
-		echo "write $d"
 		write_desktop_settings $d WallpaperMode NoWallpaper
 		write_desktop_settings $d BackgroundMode Flat
 		write_desktop_settings $d Color1 0,0,0
