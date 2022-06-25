@@ -130,9 +130,6 @@ save_bg_settings() {
 
 	for d in $(seq 0 $lim)
 	do
-		# Here we prefer to read the config as we don't know the
-		# actual number of desktops and KBackgroundIface returns
-		# a wallpaper even for nonexistant desktops.
 		wmode=`read_desktop_settings $d WallpaperMode`
 		test -z "$wmode" && break
 		bmode=`read_desktop_settings $d BackgroundMode`
