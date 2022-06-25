@@ -1,4 +1,4 @@
-# Your Trinity Desktop is Not Activated"
+# "Your Trinity Desktop is Not Activated" Joke
 Activation watermark simulator for the Trinity desktop.
 
 Released into Public Domain.
@@ -6,7 +6,7 @@ Released into Public Domain.
 Inspired by the "Activate your Linux" watermark.
 
 ## Why?
-This is meant to be a joke, please do not use it in any serious manner whatsoever.
+**This is meant to be a joke, please do not use it in any serious manner whatsoever.**
 
 Also this shows the flexibility of many Trinity components, in this case the desktop and Superkaramba, which can be scripted with dcop and simple shell scripts.
 
