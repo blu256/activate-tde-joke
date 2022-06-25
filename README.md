@@ -19,3 +19,5 @@ That should not mess up your previous desktop setup unless you do some changes t
 ## Can I trust it?
 
 You can inspect the way this script works to see that nothing nefarious takes place behind the scenes.
+
+To be on the safe side, back up your `kdesktoprc` configuration file, located in your user config directory (usually `~/.trinity/share/config`).
