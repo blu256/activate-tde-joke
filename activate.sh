@@ -34,11 +34,14 @@ ALL_FILES="$PATH_KARAMBA $PATH_BG_BACKUP"
 THEME_NAME=$(basename $PATH_KARAMBA | sed "s:\.theme::g")
 
 do_checks() {
-	# Installation of superkaramba
-	which superkaramba >/dev/null 2>&1 || {
-		echo "Error: Superkaramba not found in PATH"
-		exit 2
-	}
+	# Needed tools
+	for t in superkaramba xrandr kreadconfig kwriteconfig
+	do
+		which $t >/dev/null 2>&1 || {
+			echo "Error: '$t' not found in PATH"
+			exit 2
+		}
+	done
 
 	# Write permission for directory to store the superkaramba theme
 	for p in $ALL_FILES
